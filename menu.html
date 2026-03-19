@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наше Меню - OCEAN LAB</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <div class="background-image-all"></div>
+
+    <!-- Header (как на главной) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="Rectangle 13.png" alt="OCEAN LAB" width="325" height="100">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="spesialist.html">Наши специалисты</a></li>
+                        <li><a href="menu.html">Цены</a></li>
+                        <li><a href="schedule.html">Расписание мероприятий</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="reserve.html" class="logo">
+                    <img src="Group 3.png" alt="Забронировать столик" width="200" height="60">
+                </a>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция Меню -->
+    <main>
+        <section class="menu-section">
+            <div class="container">
+                <h1 class="menu-title">МЕНЮ</h1>
+                
+                <div class="menu-grid">
+                    <!-- Фото 1 -->
+                    <div class="menu-item">
+                        <img src="Гребешок в раковине.png" alt="Гребешок в раковине">
+                    </div>
+
+                    <!-- Фото 2 -->
+                    <div class="menu-item">
+                        <img src="Лобстер.png" alt="Лобстер">
+                    </div>
+
+                    <!-- Фото 3 -->
+                    <div class="menu-item">
+                        <img src="Ноги камчатского краба.png" alt="Ноги камчатского краба">
+                    </div>
+
+                    <!-- Фото 4 -->
+                    <div class="menu-item">
+                        <img src="Сашими из тунца.png" alt="Сашими из тунца">
+                    </div>
+
+                    <!-- Фото 5 -->
+                    <div class="menu-item">
+                        <img src="Сибас в соли.png" alt="Сибас в соли">
+                    </div>
+
+                    <!-- Фото 6 -->
+                    <div class="menu-item">
+                        <img src="Тартар из Лосося.png" alt="Тартар из Лосося">
+                    </div>
+
+                    <!-- Фото 7 -->
+                    <div class="menu-item">
+                        <img src="Тигровые креветки.png" alt="Тигровые креветки">
+                    </div>
+
+                    <!-- Фото 8 -->
+                    <div class="menu-item">
+                        <img src="Устрицы.png" alt="Устрицы">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Социальные ссылки (как на главной) -->
+    <div class="social-links">
+        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+            <img src="free-icon-whatsapp-1077055.png" alt="WhatsApp" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link telegram" aria-label="Telegram">
+            <img src="free-icon-telegram-2111813.png" alt="Telegram" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link vk" aria-label="VK">
+            <img src="free-icon-vk-2111828.png" alt="VK" width="24" height="24">
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

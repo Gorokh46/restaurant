@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши специалисты - OCEAN LAB</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="specialists-style.css">
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <div class="background-image-all"></div>
+
+    <!-- Header (как на главной) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="Rectangle 13.png" alt="OCEAN LAB" width="325" height="100">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="spesialist.html">Наши специалисты</a></li>
+                        <li><a href="menu.html">Цены</a></li>
+                        <li><a href="schedule.html">Расписание мероприятий</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="reserve.html" class="logo">
+                    <img src="Group 3.png" alt="Забронировать столик" width="200" height="60">
+                </a>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция Специалисты -->
+    <main>
+        <section class="specialists-section">
+            <div class="container">
+                <h1 class="specialists-title">НАШИ СПЕЦИАЛИСТЫ</h1>
+                
+                <!-- Вложенный список специалистов -->
+                <ol class="specialists-list">
+                    
+                    <!-- Шеф-повар -->
+                    <li class="specialist-item">
+                        <div class="specialist-header">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="✔" class="list-marker">
+                            <h3 class="specialist-name">Александр Морской</h3>
+                            <span class="specialist-role">Шеф-повар</span>
+                        </div>
+                        <ul class="specialist-details">
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Опыт работы: 15 лет</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Специализация: морепродукты, авторская кухня</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Образование: Кулинарная академия Лиона, Франция</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Су-шеф -->
+                    <li class="specialist-item">
+                        <div class="specialist-header">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="✔" class="list-marker">
+                            <h3 class="specialist-name">Елена Волнова</h3>
+                            <span class="specialist-role">Су-шеф</span>
+                        </div>
+                        <ul class="specialist-details">
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Опыт работы: 10 лет</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Специализация: холодные закуски, декор блюд</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Победитель конкурса «Золотой Гребешок» 2022</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Сомелье -->
+                    <li class="specialist-item">
+                        <div class="specialist-header">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="✔" class="list-marker">
+                            <h3 class="specialist-name">Дмитрий Винный</h3>
+                            <span class="specialist-role">Сомелье</span>
+                        </div>
+                        <ul class="specialist-details">
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Опыт работы: 12 лет</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Сертификация: Court of Master Sommeliers, Level 3</span>
+                            </li>
+                            <li>
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="•" class="sub-marker">
+                                <span>Автор винной карты из 200+ позиций</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Социальные ссылки -->
+    <div class="social-links">
+        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+            <img src="free-icon-whatsapp-1077055.png" alt="WhatsApp" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link telegram" aria-label="Telegram">
+            <img src="free-icon-telegram-2111813.png" alt="Telegram" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link vk" aria-label="VK">
+            <img src="free-icon-vk-2111828.png" alt="VK" width="24" height="24">
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCEAN LAB - Океан в твоей тарелке</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключение внешнего CSS файла -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <div class="background-image"></div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Логотип с изображением Rectangle 13.png -->
+                <a href="index.html" class="logo">
+                    <img src="Rectangle 13.png" alt="OCEAN LAB" width="325" height="100">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="spesialist.html">Наши специалисты</a></li>
+                        <li><a href="menu.html">Цены</a></li>
+                        <li><a href="schedule.html">Расписание мероприятий</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="reserve.html" class="logo">
+                    <img src="Group 3.png" alt="Забронировать столик" width="200" height="60">
+                </a>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>ОКЕАН В ТВОЕЙ ТАРЕЛКЕ</h1>
+                        <p class="hero-subtitle">Открой новый вкус с нашими поварами</p>
+                        <a href="reserve.html" class="logo">
+                           <img src="Group 3.png" alt="Забронировать столик" width="200" height="60">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <!-- Блок 1: Rectangle 10.png -->
+                    <div class="feature-card">
+                        <img src="Rectangle 10.png" alt="Блок 1" width="430" height="247">
+                    </div>
+
+                    <!-- Блок 2: Rectangle 12.png -->
+                    <div class="feature-card">
+                        <img src="Rectangle 12.png" alt="Блок 2" width="430" height="247">
+                    </div>
+
+                    <!-- Блок 3: Rectangle 14.png -->
+                    <div class="feature-card">
+                        <img src="Rectangle 14.png" alt="Блок 3" width="430" height="247">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Социальные ссылки (вместо footer) -->
+    <div class="social-links">
+        <!-- WhatsApp -->
+        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+            <img src="free-icon-whatsapp-1077055.png" alt="WhatsApp" width="24" height="24">
+        </a>
+        
+        <!-- Telegram -->
+        <a href="#" class="social-link telegram" aria-label="Telegram">
+            <img src="free-icon-telegram-2111813.png" alt="Telegram" width="24" height="24">
+        </a>
+        
+        <!-- VK -->
+        <a href="#" class="social-link vk" aria-label="VK">
+            <img src="free-icon-vk-2111828.png" alt="VK" width="24" height="24">
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

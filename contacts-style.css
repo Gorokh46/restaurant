@@ -1,0 +1,203 @@
+/* =========================================
+   Страница Контакты - СТАТИЧНАЯ ВЕРСИЯ
+   Без анимаций и эффектов при наведении
+   ========================================= */
+
+.contacts-section {
+    padding: 3rem 0 5rem;
+    min-height: calc(100vh - 200px);
+}
+
+/* Заголовок */
+.contacts-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-light);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Контент контактов */
+.contacts-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 85px;
+    align-items: start;
+}
+
+/* Фотография ресторана */
+.contacts-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.contacts-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Контактная информация */
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Блок контакта - СТАТИЧНЫЙ */
+.contact-block {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(201, 169, 98, 0.3);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(10px);
+    margin-top: -20px;
+    /* Убрано: transition, transform, hover-эффекты */
+}
+
+/* Заголовок блока */
+.contact-block-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Текст контакта */
+.contact-text {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.contact-text a {
+    color: var(--text-light);
+    text-decoration: none;
+    /* Убрано: transition, hover-эффекты */
+}
+
+/* Кнопка CTA - СТАТИЧНАЯ */
+.contact-cta {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.contact-cta .btn-primary {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, var(--primary-gold) 0%, #b89650 100%);
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(201, 169, 98, 0.3);
+    /* Убрано: transition, transform, hover-эффекты */
+}
+
+/* Карта */
+.contacts-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 85px;
+}
+
+/* =========================================
+   Адаптивность (без анимаций)
+   ========================================= */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .contacts-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 40px;
+    }
+
+    .contacts-image img {
+        height: 400px;
+    }
+
+    .contacts-title {
+        font-size: 2.8rem;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+    .contacts-section {
+        padding: 2rem 0 4rem;
+    }
+
+    .contacts-content {
+        padding: 0 20px;
+        gap: 2rem;
+    }
+
+    .contacts-image img {
+        height: 300px;
+    }
+
+    .contacts-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .contact-block {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .contact-block-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-text {
+        font-size: 0.95rem;
+    }
+
+    .contacts-map {
+        padding: 0 20px;
+    }
+
+    .contacts-map iframe {
+        height: 300px;
+    }
+}
+
+/* Маленькие экраны */
+@media (max-width: 480px) {
+    .contacts-title {
+        font-size: 1.8rem;
+    }
+
+    .contacts-image img {
+        height: 250px;
+    }
+
+    .contact-block-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-cta .btn-primary {
+        padding: 0.9rem 2rem;
+        font-size: 0.9rem;
+    }
+}
+body .social-links {
+    margin-top: -40px;
+    padding: 1rem 0;

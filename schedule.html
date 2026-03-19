@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание - OCEAN LAB</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="schedule-style.css">
+</head>
+<body>
+    <!-- Фоновое изображение -->
+    <div class="background-image-all"></div>
+
+    <!-- Header (как на главной) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="Rectangle 13.png" alt="OCEAN LAB" width="325" height="100">
+                </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="spesialist.html">Наши специалисты</a></li>
+                        <li><a href="menu.html">Цены</a></li>
+                        <li><a href="schedule.html">Расписание мероприятий</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <a href="reserve.html" class="logo">
+                    <img src="Group 3.png" alt="Забронировать столик" width="200" height="60">
+                </a>
+
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция Расписание -->
+    <main>
+        <section class="schedule-section">
+            <div class="container">
+                <h1 class="schedule-title">РАСПИСАНИЕ МЕРОПРИЯТИЙ</h1>
+                
+                <div class="schedule-table-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">День</th>
+                                <th rowspan="2">Время</th>
+                                <th colspan="2">Основной зал</th>
+                                <th colspan="2">VIP-зона</th>
+                                <th rowspan="2">Статус</th>
+                            </tr>
+                            <tr>
+                                <th>Мероприятие</th>
+                                <th>Ведущий</th>
+                                <th>Мероприятие</th>
+                                <th>Ведущий</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Понедельник -->
+                            <tr>
+                                <td rowspan="2" class="day-cell">Понедельник</td>
+                                <td>12:00 - 14:00</td>
+                                <td>Дегустация устриц</td>
+                                <td>Шеф-повар Алексей</td>
+                                <td rowspan="2" colspan="2" class="merged-event">—</td>
+                                <td class="status-available">Доступно</td>
+                            </tr>
+                            <tr>
+                                <td>19:00 - 22:00</td>
+                                <td colspan="2" class="merged-event">Вечер живой музыки</td>
+                                <td class="status-booked">Заполнено</td>
+                            </tr>
+
+                            <!-- Вторник -->
+                            <tr>
+                                <td class="day-cell">Вторник</td>
+                                <td>18:00 - 21:00</td>
+                                <td colspan="4" class="merged-event">Тематический ужин "Морская ночь"</td>
+                                <td class="status-available">Доступно</td>
+                            </tr>
+
+                            <!-- Среда -->
+                            <tr>
+                                <td class="day-cell">Среда</td>
+                                <td>15:00 - 17:00</td>
+                                <td>Дегустация краба</td>
+                                <td>Суши-мастер Юки</td>
+                                <td colspan="2" class="merged-event">Технический перерыв</td>
+                                <td class="status-available">Доступно</td>
+                            </tr>
+
+                            <!-- Четверг -->
+                            <tr>
+                                <td class="day-cell">Четверг</td>
+                                <td>19:00 - 23:00</td>
+                                <td colspan="2" class="merged-event">Вечер морепродуктов</td>
+                                <td colspan="2" class="merged-event">VIP-ужин с шефом</td>
+                                <td class="status-booked">Заполнено</td>
+                            </tr>
+
+                            <!-- Пятница -->
+                            <tr>
+                                <td rowspan="2" class="day-cell">Пятница</td>
+                                <td>17:00 - 19:00</td>
+                                <td>Happy Hour</td>
+                                <td>Бармен Дмитрий</td>
+                                <td class="merged-event">—</td>
+                                <td class="merged-event">—</td>
+                                <td class="status-available">Доступно</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 - 00:00</td>
+                                <td colspan="2" class="merged-event">Вечеринка "Ocean Friday" с живой музыкой</td>
+                                <td colspan="2" class="merged-event">Подготовка к вечеру</td>
+                                <td class="status-booked">Заполнено</td>
+                            </tr>
+
+                            <!-- Суббота -->
+                            <tr>
+                                <td class="day-cell">Суббота</td>
+                                <td>19:00 - 00:00</td>
+                                <td colspan="4" class="merged-event">Гала-ужин с шоу-программой</td>
+                                <td class="status-booked">Заполнено</td>
+                            </tr>
+
+                            <!-- Воскресенье -->
+                            <tr>
+                                <td class="day-cell">Воскресенье</td>
+                                <td>12:00 - 16:00</td>
+                                <td colspan="4" class="merged-event">Воскресный бранч "All Inclusive"</td>
+                                <td class="status-available">Доступно</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Социальные ссылки -->
+    <div class="social-links">
+        <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+            <img src="free-icon-whatsapp-1077055.png" alt="WhatsApp" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link telegram" aria-label="Telegram">
+            <img src="free-icon-telegram-2111813.png" alt="Telegram" width="24" height="24">
+        </a>
+        
+        <a href="#" class="social-link vk" aria-label="VK">
+            <img src="free-icon-vk-2111828.png" alt="VK" width="24" height="24">
+        </a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
